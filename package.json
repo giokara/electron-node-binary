@@ -1,0 +1,45 @@
+{
+  "name": "example-electron-node-binary",
+  "productName": "example-electron-node-binary",
+  "version": "0.0.1",
+  "main": "electron/main.js",
+  "description": "",
+  "scripts": {
+    "start": "tsc --noStrictGenericChecks && concurrently \"tsc -w --noStrictGenericChecks\" \"lite-server\" \"electron electron/main.js\"",
+    "electron": "electron",
+    "postinstall": "typings install",
+    "test": "tsc --noStrictGenericChecks && lite-server && electron electron/main.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
+    "@angular/router": "^3.4.10",
+    "back-addon": "file:lib",
+    "core-js": "^2.4.1",
+    "es6-promise": "^4.1.1",
+    "es6-shim": "^0.35.3",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "0.19.27",
+    "zone.js": "^0.8.16"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "electron": "^1.6.11",
+    "lite-server": "^2.2.0",
+    "nan": "^2.7.0",
+    "systemjs-plugin-node-binary": "^0.1.2",
+    "tslint": "^3.7.4",
+    "typings": "^1.0.4"
+  },
+  "repository": {}
+}

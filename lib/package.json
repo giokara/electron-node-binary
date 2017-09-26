@@ -1,0 +1,31 @@
+{
+  "name": "back-addon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/Release/back-addon.node",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp configure build",
+    "compile": "node-gyp rebuild"
+  },
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "nan": "^2.7.0",
+    "node-gyp": "^3.6.2"
+  }
+}
